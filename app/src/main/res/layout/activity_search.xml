@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.pc.profilesapptest.activities.Search"
+    android:background="#AAAAAA">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/searchEditText"
+            android:layout_marginTop="33dp"
+            android:autoText="false"
+            android:background="#00ffffff"
+            android:hint="Enter username or E-Mail"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEARCH"
+            android:id="@+id/btnDatabaseSearch"
+            android:layout_alignTop="@+id/btnAdd"
+            android:layout_toLeftOf="@+id/foundUsernameTextView"
+            android:layout_toStartOf="@+id/foundUsernameTextView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/foundMailTextView"
+            android:layout_gravity="right"
+            android:layout_below="@+id/foundUsernameTextView"
+            android:layout_alignRight="@+id/foundUsernameTextView"
+            android:layout_alignEnd="@+id/foundUsernameTextView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/foundUsernameTextView"
+            android:layout_alignTop="@+id/profilePicture"
+            android:layout_alignRight="@+id/searchEditText"
+            android:layout_alignEnd="@+id/searchEditText" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profilePicture"
+            android:minHeight="100dp"
+            android:minWidth="100dp"
+            android:layout_marginTop="38dp"
+            android:layout_below="@+id/btnAdd"
+            android:layout_alignLeft="@+id/btnAdd"
+            android:layout_alignStart="@+id/btnAdd" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD FRIEND"
+            android:id="@+id/btnAdd"
+            android:layout_marginTop="58dp"
+            android:layout_below="@+id/searchEditText"
+            android:layout_alignLeft="@+id/searchEditText"
+            android:layout_alignStart="@+id/searchEditText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/responseTextView"
+            android:layout_above="@+id/btnDatabaseSearch"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
